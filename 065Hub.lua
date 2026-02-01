@@ -1,7 +1,7 @@
 --[[
     Developed by: 065
     Project: Multi-Hack Hub (ESP + FLY)
-    Version: 2.0
+    Version: 4.2
 ]]
 
 local Players = game:GetService("Players")
@@ -46,7 +46,7 @@ Title.Parent = MainFrame
 Title.BackgroundTransparency = 1
 Title.Size = UDim2.new(1, 0, 0, 40)
 Title.Font = Enum.Font.GothamBold
-Title.Text = "065 多功能選單"
+Title.Text = "065 官方外掛""
 Title.TextColor3 = Color3.fromRGB(255, 215, 0)
 Title.TextSize = 18
 
@@ -56,7 +56,7 @@ SubTitle.BackgroundTransparency = 1
 SubTitle.Position = UDim2.new(0, 0, 0, 30)
 SubTitle.Size = UDim2.new(1, 0, 0, 20)
 SubTitle.Font = Enum.Font.SourceSansItalic
-SubTitle.Text = "by 065製作"
+SubTitle.Text = "by 065與PW共同製作"
 SubTitle.TextColor3 = Color3.fromRGB(200, 200, 200)
 SubTitle.TextSize = 14
 
@@ -157,5 +157,6 @@ end)
 Players.PlayerAdded:Connect(function(p)
     p.CharacterAdded:Connect(SetupHighlight)
 end)
+
 
 print("065 Hub 已成功加載！")
